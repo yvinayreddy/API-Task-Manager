@@ -1,0 +1,28 @@
+task-manager-api/
+│
+├── controllers/
+│   ├── authController.js
+│   └── taskController.js
+│
+├── routes/
+│   ├── authRoutes.js
+│   └── taskRoutes.js
+│
+├── middleware/
+│   └── authMiddleware.js
+│
+├── models/
+│   ├── userModel.js
+│   └── taskModel.js
+│
+├── config/
+│   └── db.js
+│
+├── app.js
+└── server.js
+
+
+pass of db=XQNCzbIDT83alwEX
+
+mongodb+srv://bt24cse045_db_user:XQNCzbIDT83alwEX@cluster0.yey1ka7.mongodb.net/?appName=Cluster0
+mongodb+srv://bt24cse045_db_user:<db_password>@cluster0.yey1ka7.mongodb.net/?appName=Cluster0
