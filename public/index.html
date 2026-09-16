@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="authView" class="card auth-card">
+        <h1>Task Manager</h1>
+
+        <div class="tab-toggle">
+          <button class="tab-btn active" data-tab="login">Login</button>
+          <button class="tab-btn" data-tab="register">Register</button>
+        </div>
+
+        <form id="loginForm" class="auth-form active">
+          <label>
+            Email
+            <input type="email" id="loginEmail" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Password
+            <input type="password" id="loginPassword" placeholder="********" required />
+          </label>
+          <button type="submit">Login</button>
+        </form>
+
+        <form id="registerForm" class="auth-form">
+          <label>
+            Email
+            <input type="email" id="registerEmail" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Password
+            <input type="password" id="registerPassword" placeholder="********" required />
+          </label>
+          <button type="submit">Register</button>
+        </form>
+
+        <p id="authMessage" class="message"></p>
+      </div>
+
+      <div id="appView" class="hidden">
+        <header class="app-header">
+          <div>
+            <h2>My Tasks</h2>
+          </div>
+          <button id="logoutBtn" class="logout-btn">Logout</button>
+        </header>
+
+        <form id="taskForm" class="task-form">
+          <input id="taskInput" type="text" placeholder="Add a new task..." required />
+          <button type="submit">Add Task</button>
+        </form>
+
+        <ul id="taskList" class="task-list"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
